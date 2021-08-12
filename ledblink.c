@@ -1,6 +1,6 @@
 #include <rtthread.h>
 #include <rtdevice.h>
-#include <drv_common.h>
+#include <board.h>
 #include "ledblink.h"
 
 static struct led_blink_item led_blink_ls[LED_COUNT] = led_blink_list;
