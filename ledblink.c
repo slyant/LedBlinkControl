@@ -76,6 +76,7 @@ static void led_blink_init(void)
             ls[i].ison = 0;
             ls[i].state = !led_blink_ls[i].on_state;
             rt_pin_mode(led_blink_ls[i].pin, PIN_MODE_OUTPUT);
+            rt_pin_write(led_blink_ls[i].pin, !led_blink_ls[i].on_state);
         }
     }
 }
